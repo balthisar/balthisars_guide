@@ -1,0 +1,38 @@
+---
+title: Additional Printer Drivers
+---
+<%= md_links %>
+<%= md_images %>
+
+If you use the recommended distribution of GhostScript, AFL-GhostScript
+6.50.5, you’ll have support for all of the following printers, including those
+separately-but-integratedly supported by gimp-print and Uniprint.
+
+The following table shows all of the supported <samp>-sDEVICE=</samp> types
+that the recommended GhostScript installation should put on your system. Note
+that not all devices are printers, since GhostScript is not merely a printer
+driver. Clicking on the device type will open a new window with an explanation
+of what that device type is for, courtesy of
+[http://www.linuxfoundation.org/collaborate/workgroups/openprinting][1].
+
+In order to eliminate link rot, I’ve removed the table of drivers. For a
+complete, maintained list of drivers, please refer to
+[http://www.linuxfoundation.org/collaborate/workgroups/openprinting][1].
+{: .note .callout}
+
+To view the built-in, “native” drivers that GhostScript supports, do…
+
+<kbd>gs –h</kbd>
+
+…in the terminal. This will provide a list of <samp>-sDEVICE=</samp> types
+that are installed on your system.
+
+Many of these printers have added, special GhostScript parameters that you
+won’t find in <samp>man gs</samp>. Luckily there’s a just-about-complete
+reference to all of these devices at
+[http://www.linuxfoundation.org/collaborate/workgroups/openprinting][1]. As an
+added benefit, this site will tell you which GhostScript -<samp>
+sDEVICE=</samp> to use for your printer.
+
+ [1]: http://www.linuxfoundation.org/collaborate/workgroups/openprinting
+ 

@@ -1,0 +1,15 @@
+---
+title: 'sudo rm -R / -- never!'
+---
+<%= md_links %>
+<%= md_images %>
+
+If someone tricks you into typing this, you’ll erase everything off of all of
+your mounted hard drives. Not just the system drive, but <em>all</em> of them!
+
+<samp>rm</samp> means remove. <kbd>-R</kbd> means recursively, that is, every
+directory inside the target. <kbd>/</kbd> is the target, and means the top
+level of your computer, which logically represents all of your mounted hard
+drives.
+
+So, don’t do this. That would just be silly.

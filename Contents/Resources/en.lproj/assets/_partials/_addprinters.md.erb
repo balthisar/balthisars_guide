@@ -1,0 +1,38 @@
+<%= md_links %>
+<%= md_images %>
+
+<figure>
+ <%= image_tag 'printcenter1.jpg', :alt => 'the print center', :figure => false %>
+<figcaption>Mac OS X Print Center</figcaption>
+</figure>
+
+In Mac OS X, open the Print Center application. If Print Center doesn’t
+automatically offer to add a printer for you, choose the <samp>Add
+Printer…</samp> button.
+
+<figure>
+ <%= image_tag 'printcenter2.jpg', :alt => 'the print center', :figure => false %>
+<figcaption>Print Center Add Printer dialogue</figcaption>
+</figure>
+
+In the pop-up menu that allows you to select the class of printer (i.e.,
+<samp>AppleTalk</samp>, <samp>USB</samp>, <samp>LPR Printers using IP</samp>,
+and <samp>Directory Services</samp>), select <samp>Directory Services</samp>.
+You should see listed the <samp>ghostscript</samp> printer. If you setup for
+TCP/IP printing, you’ll additionally see the printer <samp>lp</samp>. These
+are the printers we defined in NetInfo Manager.
+
+
+<figure>
+ <%= image_tag 'printcenter3.jpg', :alt => 'the print center', :figure => false %>
+<figcaption>Print Center with newly added printer</figcaption>
+</figure>
+
+Add the <samp>ghostscript</samp> printer, and wait for Print Center to add it.
+If Print Center gives you the spinning beach ball and you have to force-quit,
+it probably means you made an error in the NetInfo Manager. You’ll have to fix
+the problems there, restart the computer, then add the printer to the Print
+Center again.
+
+Once <samp>ghostscript</samp> is set as your default printer, you’re all set;
+there’s no reason you need to add <samp>lp</samp> to the Print Center.

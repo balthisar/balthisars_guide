@@ -1,0 +1,42 @@
+<%= md_links %>
+<%= md_images %>
+
+
+Next we need to build the directories where BSD/Mac OS will temporarily store
+print jobs during processing. These are called spool directories.
+
+
+[Start a terminal][startterminal]</a> and [<samp>su</samp> to
+<samp>root</samp>][becomeroot] if you have not already done so. Then, do the
+following to create a spool directory for the printer
+<samp>ghostscript</samp>:
+
+
+`mkdir –p /var/spool/lpd/ghostscript`
+: creates a spool directory for the printer <samp>ghostscript</samp>.
+  Remember, if you changed the name in the NetInfo Manager, make
+  sure you use the same name in this whole step.
+
+`cd /var/spool/lpd`
+: move to the <samp>/var/spool/lpd</samp> directory.
+
+`touch ghostscript/.seq`
+: creates file called <samp>.seq.</samp> I don’t know why it’s required.
+
+`chown –R daemon.daemon ghostscript`
+: sets the correct owner for the directory and contents.
+{: .width50 .codeAndDescription}
+
+If you’re using TCP/IP printing, you also need to create a spool directory for
+the printer lp.
+
+`mkdir lp`
+: creates a spool directory for the printer <samp>lp</samp>.
+
+`touch lp/.seq`
+: creates file called <samp>.seq</samp>. I don’t know why it’s required.
+
+`chown –R daemon.daemon lp`
+: sets the correct owner for the directory and contents.
+
+That’s everything we need to do here.

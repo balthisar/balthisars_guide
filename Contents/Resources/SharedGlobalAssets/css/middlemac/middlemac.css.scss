@@ -5,7 +5,7 @@
   white-space: pre-wrap;
 }
 
-p {
+p, div {
   &.note,
   &.tip,
   &.warning  {
@@ -25,8 +25,8 @@ p {
   &.warning { background-image: url('warning.svg'); }
   
   &.note::before    { content: "Note "; }
-  &.tip::before     {    content: "Tip ";  }
-  &.warning::before {    content: "Warning ";  }
+  &.tip::before     { content: "Tip ";  }
+  &.warning::before { content: "Warning ";  }
 }
 
 
@@ -82,6 +82,29 @@ p {
     dd { margin-left: 2em; }
   }
   
+  // Used to format a nice looking <dl> that consists of
+  // code to by typed and a description of the purpose.
+  dl.codeAndDescription
+  {
+    dt
+    {
+      white-space: nowrap;
+      font-family: Consolas, 'Lucida Console', monospace;
+      padding-top: 1em;
+      line-height: 1.5;
+
+      + dt
+      {
+        padding-top: 0;
+      }
+    }
+
+    dd
+    {
+      padding-bottom: 1em;
+      line-height: 1.5;
+    }
+  }
 } // .apd-topic
 
 // Apple, why? Lots of people use line breaks in their source code, and

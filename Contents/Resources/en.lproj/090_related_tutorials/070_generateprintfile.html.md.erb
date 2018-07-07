@@ -1,0 +1,49 @@
+---
+title: Generate Printer Test Files via Windows
+---
+<%= md_links %>
+<%= md_images %>
+
+<p>
+  These instructions show Windows 98. Other Windows versions are similar, so
+  you’ll have to fend for yourselves.
+</p>
+
+<figure>
+  <%= image_tag 'windowprinters1.jpg', :alt => 'Windows add printer wizard', :figure => false %>
+  <figcaption>Windows 98 Printers folder</figcaption>
+</figure>
+
+<p>
+  To generate the printer test file, we’ll need to setup a fake printer in
+  Windows. Obviously you’ll need access to a Windows machine or Virtual PC to do
+  this. Start by going to the <samp>Printers</samp> folder in <samp>My
+  Computer</samp> or in <samp>Settings</samp> or in <samp>Control Panels</samp>, and
+  start the “Add Printer” wizard by double-clicking it.
+</p>
+
+
+<p>
+  This wizard will execute, as shown below. Follow the screens, remembering to
+  select “Local Printer” when asked, and specifying the printer you want to
+  generate a file for, and specifying that you want to print to the port
+  FILE:.
+</p>
+
+<%= image_tag 'printwizard1.jpg', :alt => 'printwizard 1' %>
+<%= image_tag 'printwizard2.jpg', :alt => 'printwizard 2' %>
+<%= image_tag 'printwizard3.jpg', :alt => 'printwizard 3' %>
+<%= image_tag 'printwizard4.jpg', :alt => 'printwizard 4' %>
+<%= image_tag 'printwizard5.jpg', :alt => 'printwizard 5' %>
+
+<p>
+  This example shows adding an HP DeskJet 693; of course you’ll use your own
+  printer model instead. If you choose to answer <samp>Yes</samp> to a test page,
+  you’ll be prompted for a filename. You can name and save this file anywhere you
+  want, and copy it to your Macintosh for testing later.
+</p>
+
+Note that in this documentation we refer to these Windows print files with the
+extension <samp>.PCL</samp> instead of <samp>.PRN</samp>, but files extensions
+are arbitrary anyway on the Mac, so just make sure you know which is which.
+{ .note .callout}

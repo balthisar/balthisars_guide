@@ -81,7 +81,7 @@ config[:targets] = {
         :default =>
             {
                 :CFBundleID       => 'com.balthisar.guide.help',
-                :HPDBookIconPath  => nil,
+                :HPDBookIconPath  => 'SharedGlobalAssets/convention/icon_32x32@2x.png',
                 :CFBundleName     => 'printing',
                 :ProductName      => 'Balthisar’s Guide',
                 :ProductVersion   => '4.3',
